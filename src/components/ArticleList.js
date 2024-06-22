@@ -2,7 +2,6 @@ import React from 'react';
 import ArticleCard from './ArticleCard';
 
 const ArticleList = ({ articles }) => {
-  // Filter out articles with invalid data
   const validArticles = articles.filter(article => 
     article.content !== null && 
     article.urlToImage !== null && 
