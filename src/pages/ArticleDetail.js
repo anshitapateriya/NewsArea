@@ -32,8 +32,6 @@ const ArticleDetail = () => {
           setLoading(false);
         });
     }
-
-    // Check if article is already saved
     const savedFavArticles = JSON.parse(localStorage.getItem('savedFavArticles')) || [];
     if (savedFavArticles.some(favArticle => favArticle.title === title)) {
       setIsSaved(true);
